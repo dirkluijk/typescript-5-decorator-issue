@@ -1,8 +1,8 @@
 import { inject, injectable } from "@needle-di/core";
-import { SignUpRequestsRepository } from "./sign-up-requests.repository";
-import type { PasswordSignUpDto } from "../dtos/password-sign-up.dto";
-import { VerificationCodesService } from "../verification-codes.service";
-import { HashingService } from "../hashing.service";
+import { SignUpRequestsRepository } from "./sign-up-requests.repository.js";
+import type { PasswordSignUpDto } from "../dtos/password-sign-up.dto.js";
+import { VerificationCodesService } from "../verification-codes.service.js";
+import { HashingService } from "../hashing.service.js";
 
 @injectable()
 export class SignUpRequestsService {

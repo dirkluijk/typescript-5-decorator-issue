@@ -1,7 +1,7 @@
 import { inject, injectable } from "@needle-di/core";
 import { generateRandomString } from "@oslojs/crypto/random";
-import { HashingService } from "./hashing.service";
-import { random } from "../lib/utils/helpers";
+import { HashingService } from "./hashing.service.js";
+import { random } from "../lib/utils/helpers.js";
 
 @injectable()
 export class VerificationCodesService {

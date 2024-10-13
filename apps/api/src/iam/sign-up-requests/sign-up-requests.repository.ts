@@ -1,9 +1,9 @@
 import { inject, injectable } from "@needle-di/core";
-import { RedisService } from "../../databases/redis/redis.service";
+import { RedisService } from "../../databases/redis/redis.service.js";
 import {
   type SignUpRequestDto,
   signUpRequestDto,
-} from "./dtos/sign-up-request.dto";
+} from "./dtos/sign-up-request.dto.js";
 
 @injectable()
 export class SignUpRequestsRepository {

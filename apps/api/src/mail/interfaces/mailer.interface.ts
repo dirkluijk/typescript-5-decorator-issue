@@ -1,4 +1,4 @@
-import type { EmailTemplate } from "./email-template.interface";
+import type { EmailTemplate } from "./email-template.interface.js";
 
 export type SendProps = {
   to: string | string[];

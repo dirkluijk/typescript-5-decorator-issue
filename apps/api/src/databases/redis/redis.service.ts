@@ -1,6 +1,6 @@
 import { Redis } from "ioredis";
 import { inject, injectable } from "@needle-di/core";
-import { ConfigService } from "../../lib/configs/config.service";
+import { ConfigService } from "../../lib/configs/config.service.js";
 
 @injectable()
 export class RedisService {

@@ -1,8 +1,8 @@
 import { inject, injectable } from "@needle-di/core";
-import type { Mailer, SendProps } from "./interfaces/mailer.interface";
-import { ConfigService } from "../lib/configs/config.service";
-import { DevMailerService } from "./dev-mailer.service";
-import { ProdMailerService } from "./prod-mailer.service";
+import type { Mailer, SendProps } from "./interfaces/mailer.interface.js";
+import { ConfigService } from "../lib/configs/config.service.js";
+import { DevMailerService } from "./dev-mailer.service.js";
+import { ProdMailerService } from "./prod-mailer.service.js";
 
 @injectable()
 export class MailerService implements Mailer {

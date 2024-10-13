@@ -1,9 +1,9 @@
 import { inject, injectable } from "@needle-di/core";
-import { DrizzleService } from "../databases/postgres/drizzle.service";
-import { takeFirst, takeFirstOrThrow } from "../lib/utils/repository";
+import { DrizzleService } from "../databases/postgres/drizzle.service.js";
+import { takeFirst, takeFirstOrThrow } from "../lib/utils/repository.js";
 import { eq, InferInsertModel } from "drizzle-orm";
-import { NotFound } from "../lib/utils/exceptions";
-import { accountsTable } from "./tables/accounts.table";
+import { NotFound } from "../lib/utils/exceptions.js";
+import { accountsTable } from "./tables/accounts.table.js";
 
 type Create = Pick<
   InferInsertModel<typeof accountsTable>,

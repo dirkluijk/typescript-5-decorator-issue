@@ -1,6 +1,6 @@
 import { inject, injectable } from "@needle-di/core";
-import { UsersService } from "./users.service";
-import { Controller } from "../lib/interfaces/controller.interface";
+import { UsersService } from "./users.service.js";
+import { Controller } from "../lib/interfaces/controller.interface.js";
 
 @injectable()
 export class UsersController extends Controller {

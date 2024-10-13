@@ -1,4 +1,4 @@
-import { EmailTemplate } from "../interfaces/email-template.interface"
+import { EmailTemplate } from "../interfaces/email-template.interface.js"
 
 export class EmailChangeNoticeEmail implements EmailTemplate {
 	constructor() { }

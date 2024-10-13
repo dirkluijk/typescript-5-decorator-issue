@@ -1,10 +1,10 @@
 import { inject, injectable } from "@needle-di/core";
-import { Controller } from "../lib/interfaces/controller.interface";
+import { Controller } from "../lib/interfaces/controller.interface.js";
 import { zValidator } from "@hono/zod-validator";
-import { passwordSignUpDto } from "./dtos/password-sign-up.dto";
-import { IamService } from "./iam.service";
+import { passwordSignUpDto } from "./dtos/password-sign-up.dto.js";
+import { IamService } from "./iam.service.js";
 import { setCookie } from "hono/cookie";
-import { passwordSignUpVerifyDto } from "./dtos/password-sign-up-verify.dto";
+import { passwordSignUpVerifyDto } from "./dtos/password-sign-up-verify.dto.js";
 
 @injectable()
 export class IamController extends Controller {

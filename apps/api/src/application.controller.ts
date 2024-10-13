@@ -1,7 +1,7 @@
 import { inject, injectable } from "@needle-di/core";
-import { UsersController } from "./users/users.controller";
-import { IamController } from "./iam/iam.controller";
-import { RootController } from "./lib/interfaces/controller.interface";
+import { UsersController } from "./users/users.controller.js";
+import { IamController } from "./iam/iam.controller.js";
+import { RootController } from "./lib/interfaces/controller.interface.js";
 
 @injectable()
 export class ApplicationController extends RootController {

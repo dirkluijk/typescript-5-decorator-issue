@@ -1,15 +1,15 @@
 import { inject, injectable } from "@needle-di/core";
-import { AccountsRepository } from "../users/accounts.repository";
-import type { PasswordSignUpDto } from "./dtos/password-sign-up.dto";
-import { HashingService } from "./hashing.service";
-import { BadRequest } from "../lib/utils/exceptions";
-import { UsersService } from "../users/users.service";
-import { MailerService } from "../mail/mailer.service";
-import { WelcomeEmail } from "../mail/templates/welcome.template";
-import { SessionsService } from "./sessions/sessions.service";
-import type { PasswordSignUpVerifyDto } from "./dtos/password-sign-up-verify.dto";
-import { SignUpRequestsService } from "./sign-up-requests/sign-up-requests.service";
-import { LoginVerificationEmail } from "../mail/templates/login-verification.template";
+import { AccountsRepository } from "../users/accounts.repository.js";
+import type { PasswordSignUpDto } from "./dtos/password-sign-up.dto.js";
+import { HashingService } from "./hashing.service.js";
+import { BadRequest } from "../lib/utils/exceptions.js";
+import { UsersService } from "../users/users.service.js";
+import { MailerService } from "../mail/mailer.service.js";
+import { WelcomeEmail } from "../mail/templates/welcome.template.js";
+import { SessionsService } from "./sessions/sessions.service.js";
+import type { PasswordSignUpVerifyDto } from "./dtos/password-sign-up-verify.dto.js";
+import { SignUpRequestsService } from "./sign-up-requests/sign-up-requests.service.js";
+import { LoginVerificationEmail } from "../mail/templates/login-verification.template.js";
 
 @injectable()
 export class IamService {

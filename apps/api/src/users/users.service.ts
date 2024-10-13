@@ -1,8 +1,8 @@
 import { inject, injectable } from "@needle-di/core";
-import type { CreateUserDto } from "./dtos/create-user.dto";
-import { AccountsRepository } from "./accounts.repository";
-import { ProfilesRepository } from "./profiles.repository";
-import { DrizzleService } from "../databases/postgres/drizzle.service";
+import type { CreateUserDto } from "./dtos/create-user.dto.js";
+import { AccountsRepository } from "./accounts.repository.js";
+import { ProfilesRepository } from "./profiles.repository.js";
+import { DrizzleService } from "../databases/postgres/drizzle.service.js";
 
 @injectable()
 export class UsersService {

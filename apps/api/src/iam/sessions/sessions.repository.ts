@@ -1,6 +1,6 @@
 import { inject, injectable } from "@needle-di/core";
-import { RedisService } from "../../databases/redis/redis.service";
-import { createSessionDto } from "./dtos/session.dto";
+import { RedisService } from "../../databases/redis/redis.service.js";
+import { createSessionDto } from "./dtos/session.dto.js";
 
 @injectable()
 export class SessionsRepository {

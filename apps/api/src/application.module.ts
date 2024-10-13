@@ -1,6 +1,6 @@
 import { inject, injectable } from "@needle-di/core";
-import { ConfigService } from "./lib/configs/config.service";
-import { ApplicationController } from "./application.controller";
+import { ConfigService } from "./lib/configs/config.service.js";
+import { ApplicationController } from "./application.controller.js";
 import { serve } from "@hono/node-server";
 
 @injectable()

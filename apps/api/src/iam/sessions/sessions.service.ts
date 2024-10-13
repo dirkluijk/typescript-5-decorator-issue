@@ -3,11 +3,11 @@ import {
   encodeHexLowerCase,
 } from "@oslojs/encoding";
 import { sha256 } from "@oslojs/crypto/sha2";
-import { SessionsRepository } from "./sessions.repository";
-import { createSessionDto } from "./dtos/session.dto";
-import { CreateSessionDto } from "./dtos/create-session-dto";
+import { SessionsRepository } from "./sessions.repository.js";
+import { createSessionDto } from "./dtos/session.dto.js";
+import { CreateSessionDto } from "./dtos/create-session-dto.js";
 import { inject, injectable } from "@needle-di/core";
-import { BadRequest } from "../../lib/utils/exceptions";
+import { BadRequest } from "../../lib/utils/exceptions.js";
 
 @injectable()
 export class SessionsService {

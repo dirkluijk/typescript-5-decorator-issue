@@ -1,8 +1,8 @@
 import { pgTable, text } from "drizzle-orm/pg-core";
 import { relations } from "drizzle-orm";
 import { createId } from "@paralleldrive/cuid2";
-import { citext, timestamps } from "../../lib/utils/table";
-import { profilesTable } from "./profiles.table";
+import { citext, timestamps } from "../../lib/utils/table.js";
+import { profilesTable } from "./profiles.table.js";
 
 export const accountsTable = pgTable("accounts", {
   id: text("id").primaryKey().$defaultFn(() => createId()),

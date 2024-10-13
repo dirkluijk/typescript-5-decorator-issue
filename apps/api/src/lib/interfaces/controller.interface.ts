@@ -1,4 +1,4 @@
-import { createHono } from "../utils/controller";
+import { createHono } from "../utils/controller.js";
 
 export abstract class Controller {
   protected readonly controller: ReturnType<typeof createHono>;
